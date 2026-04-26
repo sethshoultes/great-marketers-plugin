@@ -1,0 +1,9 @@
+{
+  "name": "great-marketers",
+  "version": "0.1.0",
+  "description": "Eight advertising/marketing personas + four MVP skills for positioning, ad copy, and launch composition. Fifth in the Caseproof persona constellation.",
+  "author": "Seth Shoultes <seth@caseproof.com>",
+  "repository": "github:sethshoultes/great-marketers-plugin",
+  "license": "MIT",
+  "keywords": ["marketing", "advertising", "copywriting", "positioning", "personas", "claude-code-plugin"]
+}

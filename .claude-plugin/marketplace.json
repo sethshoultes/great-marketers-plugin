@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "great-marketers",
+  "description": "Eight advertising/marketing personas (Ogilvy, Bernbach, Wells Lawrence, Clow, Reeves, Lansdowne Resor, Barton, Sutherland) + four MVP skills for positioning, copy, and launch composition. Drafted via cross-plugin orchestration with great-authors writers. v0.1 MVP.",
+  "owner": {
+    "name": "Seth Shoultes",
+    "url": "https://github.com/sethshoultes"
+  },
+  "plugins": [
+    {
+      "name": "great-marketers",
+      "description": "Eight advertising/marketing personas + four operational skills (marketers-channel, marketers-project-init, marketers-write-positioning, marketers-write-launch-copy). Companion to great-minds, great-authors, great-filmmakers, great-publishers. For Claude Code.",
+      "source": "./",
+      "category": "productivity"
+    },
+    {
+      "name": "great-marketers-dxt",
+      "description": "Same personas and skills as great-marketers, packaged as a Claude Desktop extension. Build: cd distribution/dxt && npm install && npx @anthropic-ai/dxt pack",
+      "source": "./distribution/dxt",
+      "category": "productivity"
+    }
+  ]
+}

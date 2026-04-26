@@ -1,0 +1,42 @@
+{
+  "dxt_version": "0.1",
+  "name": "great-marketers",
+  "display_name": "Great Marketers",
+  "version": "0.1.0",
+  "description": "Eight advertising/marketing personas (David Ogilvy, Bill Bernbach, Mary Wells Lawrence, Lee Clow, Rosser Reeves, Helen Lansdowne Resor, Bruce Barton, Rory Sutherland) plus four MVP tools for positioning, ad copy, and launch composition. Drafted by great-authors writers via cross-plugin orchestration.",
+  "long_description": "Channel marketing craft from eight canonical figures: David Ogilvy on research-driven copy, Bill Bernbach on the creative revolution and consumer dignity, Mary Wells Lawrence on big-bet brand strategy, Lee Clow on art-direction-led campaigns, Rosser Reeves on the Unique Selling Proposition, Helen Lansdowne Resor on emotional-appeal copy and testimonial architecture, Bruce Barton on corporate-narrative form, and Rory Sutherland on behavioral-economics-led marketing. Pair with great-authors (prose), great-filmmakers (film), and great-publishers (publication form) to compose a full creative-and-launch pipeline. Substantive output saves to marketing/<artifact-type>/<slug>.md by default — never stranded in chat.",
+  "author": {
+    "name": "Seth Shoultes",
+    "email": "seth@caseproof.com"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"]
+    }
+  },
+  "tools": [
+    {
+      "name": "list_marketers",
+      "description": "List the eight advertising/marketing personas with one-line descriptions of each."
+    },
+    {
+      "name": "marketers_channel",
+      "description": "Return a prompt that loads a named marketing persona into the conversation for direct collaborative work. Substantive output (briefs, positioning docs, ad copy) auto-saves to marketing/<artifact-type>/<slug>.md. Valid personas: david-ogilvy, bill-bernbach, mary-wells-lawrence, lee-clow, rosser-reeves, helen-lansdowne-resor, bruce-barton, rory-sutherland (short forms accepted: ogilvy, bernbach, mary-wells, clow, reeves, helen, barton, sutherland)."
+    },
+    {
+      "name": "marketers_project_init",
+      "description": "Return a prompt that scaffolds a marketing/ directory at the project root (sibling to manuscript/, film/, and publishers/) and updates .great-authors/project.md with a ## Marketing section. Subdirs: briefs/, positioning/, copy/, press/, social/. Reads the existing project bible to import title and genre."
+    },
+    {
+      "name": "marketers_write_positioning",
+      "description": "Return a prompt that produces an ad-ready positioning doc covering audience (as a person), angle, proposition, evidence, register, and refusals. Default persona David Ogilvy; override available. Saves to marketing/positioning/<slug>.md. The positioning doc is the contract every downstream copy work obeys."
+    },
+    {
+      "name": "marketers_write_launch_copy",
+      "description": "Return a prompt that produces channel-specific launch copy (email, social, press, web). Reads the positioning doc as the contract. Auto-selects the right persona per channel: Ogilvy for email/web, Bernbach for social, Barton for press. Override available. Saves to marketing/copy/<slug>-<channel>.md."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "great-marketers",
+  "version": "0.1.0",
+  "description": "Eight advertising/marketing personas (David Ogilvy, Bill Bernbach, Mary Wells Lawrence, Lee Clow, Rosser Reeves, Helen Lansdowne Resor, Bruce Barton, Rory Sutherland) plus four operational skills for positioning, ad copy, and launch composition. Drafted by great-authors writers using cross-plugin orchestration. Fifth in the Caseproof persona constellation — owns marketing.",
+  "author": {
+    "name": "Seth Shoultes",
+    "url": "https://github.com/sethshoultes"
+  },
+  "repository": "https://github.com/sethshoultes/great-marketers-plugin",
+  "license": "MIT",
+  "keywords": ["marketing", "advertising", "copywriting", "positioning", "personas", "claude-code-plugin"]
+}
