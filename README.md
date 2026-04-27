@@ -8,6 +8,8 @@ Eight advertising/marketing personas (David Ogilvy, Bill Bernbach, Mary Wells La
 - [`great-publishers-plugin`](https://github.com/sethshoultes/great-publishers-plugin) — publication form
 - **`great-marketers-plugin`** (this repo) — marketing
 
+> **New to the Caseproof persona constellation?** Start with [`/constellation-start`](https://github.com/sethshoultes/great-minds-plugin) in `great-minds` — it asks 2-3 questions about your project shape and routes to the right plugin.
+
 ## Install
 
 **Claude Code:**
